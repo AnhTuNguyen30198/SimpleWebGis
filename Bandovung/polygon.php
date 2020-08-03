@@ -30,9 +30,8 @@
             <ul class="nav navbar-nav text-light" id="accordionSidebar">
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="../index.php"><i class="fas fa-tachometer-alt"></i><span>Bản Đồ Nền</span></a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="../Bandovung/polygon.php"><i class="fas fa-user"></i><span>Bản Đồ Vùng</span></a></li>
-                <!-- i class="far fa-user-circle"></i><span>Login</span></a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="register.html"><i class="fas fa-user-circle"></i><span>Register</span></a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="forgot-password.html"><i class="fas fa-key"></i><span>Forgotten Password</span></a></li> -->
+                <li class="nav-item" role="presentation"><a class="nav-link" href="../Bandoduong/road.php"><i class="fas fa-user-circle"></i><span>Bản đồ Đường</span></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="../Bandodiem/point.php"><i class="fas fa-key"></i><span>Bản đồ điểm</span></a></li>
             </ul>
     </nav>
     <div class="d-flex flex-column" id="content-wrapper">
@@ -81,10 +80,10 @@
                                 var styles = {
                                     'MultiPolygon': new ol.style.Style({
                                         fill: new ol.style.Fill({
-                                            color: 'orange'
+                                            color: 'yellow'
                                         }),
                                         stroke: new ol.style.Stroke({
-                                            color: 'yellow',
+                                            color: 'blue',
                                             width: 2
                                         })
                                     })
@@ -154,7 +153,6 @@
                                 {
                                     alert("result: " + result);
                                     //alert("coordinate des: " + coordinate);
-                                    map.addPopup(result);
                                 }
                                 map.on('singleclick', function (evt) {
                                     //alert("coordinate: " + evt.coordinate);
